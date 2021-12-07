@@ -127,5 +127,7 @@ h2:hover, .creator:hover {
 }
 
 @media (max-width: 375px) {
-
+    body {
+        padding: 2rem 1rem;
+    }
 }
