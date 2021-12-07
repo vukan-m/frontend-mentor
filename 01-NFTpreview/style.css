@@ -1,7 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Outfit;
+    --mainBg: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --hover: hsl(178, 100%, 50%);
+    --font: hsl(215, 51%, 70%);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 98%;
+    color: var(--font);
+    background-color: var(--mainBg);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--cardBG);
+    width: 345px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 100px 1px black;
+}
+
+h2 {
+    color: white;
+    font-weight: 600;
+    margin-block: 1.25rem;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-block: 1.25rem;
+}
+
+.amount {
+    font-weight: 400;
+    color: var(--hover);
+    vertical-align: middle;
+}
+
+.time {
+    float: right;
+    font-weight: 400;
+}
+
+hr {
+    color: var(--line);
+    margin-block: 1.25rem;
+}
+
+.card > img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+}
+
+
+
+p > img {
+    vertical-align: middle;
+    width: 3ch;
+    aspect-ratio: 1;
+    border: 1px solid white;
+    margin-inline-end: 1rem;
+    border-radius: 50%;
+}
+
+.amount img {
+    width: 1ch;
+    height: 1.7ch;
+    margin-inline-end: 0.5rem;
+    vertical-align: text-bottom;
+}
+
+.time img {
+    width: 2ch;
+    height: auto;
+    margin-inline-end: 0.3rem;
+    vertical-align: text-bottom;
+}
+
+.creator {
+    color: white;
+}
+
+h2:hover, .creator:hover {
+    color: var(--hover);
+    cursor: pointer;
+}
+
 .attribution {
+    width: 100%;
     font-size: 11px; text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+
 }
